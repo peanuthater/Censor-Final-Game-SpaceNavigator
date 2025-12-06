@@ -10,6 +10,8 @@ from rotary_encoder import RotaryEncoder
 
 
 class Hardware:
+    NEOPIXEL_COUNT = 60 
+
     def __init__(self, i2c):
         print("Initializing hardware...")
 
@@ -52,8 +54,8 @@ class Hardware:
         self.text_layer = label.Label(
             terminalio.FONT, 
             text="", 
-            anchor_point=(0.5, 0.5),    # Center horizontally and vertically
-            anchored_position=(64, 32)  # Center position (128/2, 64/2)
+            anchor_point=(0.5, 0.5),     # Center horizontally and vertically
+            anchored_position=(64, 32)   # Center position (128/2, 64/2)
         )
         self.main_group.append(self.text_layer)
 
@@ -64,7 +66,12 @@ class Hardware:
         import adafruit_adxl34x
 
         self.accel = adafruit_adxl34x.ADXL343(self.i2c)
-        self.pixel = neopixel.NeoPixel(board.D9, 1, brightness=0.5)
+        self.pixel = neopixel.NeoPixel(
+            board.D9, 
+            self.NEOPIXEL_COUNT, 
+            brightness=0.5,
+            auto_write=True 
+        )
 
     # ==========================
     #   Only ONE Button (D2)
@@ -122,7 +129,8 @@ class Hardware:
             "BLUE": (0, 0, 255),
             "PURPLE": (150, 0, 120),
         }
-        self.pixel[0] = colors.get(state, (0, 0, 0))
+        color = colors.get(state, (0, 0, 0))
+        self.pixel.fill(color)
 
     # ==========================
     #   Motion Detection
