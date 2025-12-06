@@ -4,7 +4,6 @@
 # ==========================
 
 class HighScoreManager:
-    """Manages the top 3 high scores and handles simulated NVM storage."""
     
     DEFAULT_SCORES = [
         {"score": 18, "initials": "LYA"},
@@ -12,7 +11,7 @@ class HighScoreManager:
         {"score": 11, "initials": "JOE"},
     ]
     
-    NVM_KEY_PREFIX = "HS" # Prefix for simulated NVM access
+    NVM_KEY_PREFIX = "HS" 
 
     def __init__(self, hardware):
         self.hardware = hardware
