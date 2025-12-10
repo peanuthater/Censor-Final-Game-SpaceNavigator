@@ -1,9 +1,9 @@
 # Space Navigator — Embedded Reaction Game (Censor Final Project)
-
+<br>
 
 ## Overview
-Space Navigator is an interactive, reaction-based embedded game designed using CircuitPython. The system integrates an OLED display, NeoPixel LED ring, ADXL343 accelerometer, and a rotary encoder with push-button input.
-Players must respond quickly to on-screen commands—rotating the encoder, pressing the button, or tilting the controller—before time runs out. As the game advances, the difficulty increases through shorter action windows and more demanding sequences.
+Space Navigator is an interactive, reaction-based embedded game designed using CircuitPython. The system integrates an OLED display, NeoPixel LED ring, ADXL343 accelerometer, and a rotary encoder with push-button input.<br>
+Players must respond quickly to on-screen commands—rotating the encoder, pressing the button, or tilting the controller—before time runs out. As the game advances, the difficulty increases through shorter action windows and more demanding sequences.<br>
 This project is implemented using a modular architecture with the following components:
 1. game_hardware.py — Hardware abstraction layer
 2. game_logic.py — Game state machine, scoring, and high-score logic
@@ -11,11 +11,11 @@ This project is implemented using a modular architecture with the following comp
 4. high_score_manager.py — Persistent high-score storage simulator
 5. rotary_encoder.py — Low-level quadrature rotary encoder driver
 6. maincode.py — Main program entry point
-
+<br>
 
 ## Game Mechanics and Flow
 ### 1. Boot Animation
-At startup, an ASCII-style animated character walks across the screen.
+At startup, an ASCII-style animated character walks across the screen.<br>
 This animation is rendered frame-by-frame using a small custom text canvas, providing a lively opening sequence.
 
 ### 2. Start Screen
