@@ -40,8 +40,8 @@ Each action is randomly selected from:<br>
 TURN_LEFT<br>
 TURN_RIGHT<br>
 PRESS (encoder push button)<br>
-TILT_LEFT (detected via accelerometer)<br>
-TILT_RIGHT<br>
+UP (detected via accelerometer)<br>
+DOWN<br>
 The allowed reaction time decreases with level progression, determined by a difficulty-based timing function.
 
 ### 5. Scoring System
@@ -193,8 +193,8 @@ Based on this, the enclosure was intentionally designed to evoke the feeling of 
 Because the game includes action inputs such as:<br>
 Rotation (via rotary encoder)<br>
 Button press<br>
-Left tilt<br>
-Right tilt<br>
+UP tilt<br>
+DOWN tilt<br>
 the gameplay experience strongly parallels driving or steering mechanisms.<br>
 To reinforce this thematic connection, the enclosure was built as a circular steering-wheel–like structure, with:<br>
 A round LED ring representing an illuminated dashboard instrument<br>
