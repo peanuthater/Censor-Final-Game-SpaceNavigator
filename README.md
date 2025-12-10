@@ -1,5 +1,6 @@
 # Space Navigator — Embedded Reaction Game (Censor Final Project)
 
+
 ## Overview
 Space Navigator is an interactive, reaction-based embedded game designed using CircuitPython. The system integrates an OLED display, NeoPixel LED ring, ADXL343 accelerometer, and a rotary encoder with push-button input.
 Players must respond quickly to on-screen commands—rotating the encoder, pressing the button, or tilting the controller—before time runs out. As the game advances, the difficulty increases through shorter action windows and more demanding sequences.
@@ -10,6 +11,7 @@ This project is implemented using a modular architecture with the following comp
 4. high_score_manager.py — Persistent high-score storage simulator
 5. rotary_encoder.py — Low-level quadrature rotary encoder driver
 6. maincode.py — Main program entry point
+
 
 ## Game Mechanics and Flow
 ### 1. Boot Animation
@@ -66,6 +68,7 @@ A formatted high-score table is displayed until the player presses the button.
 
 ### 8. Restart Loop
 The game waits for the player to press the encoder button, then resets and returns to the start screen.
+
 
 ## Code Architecture
 Project Directory Structure:
@@ -144,6 +147,7 @@ Enter the main game loop
 Recover from unexpected exceptions and restart safely
 Ensures stable continuous gameplay.
 
+
 ## Hardware Components
 | Component                                      | Description                 | Purpose                              |
 | ---------------------------------------------- | --------------------------- | ------------------------------------ |
@@ -158,7 +162,8 @@ I²C wiring:
 SDA → D8
 SCL → D3
 
-## 5. Enclosure Design Rationale
+
+## Enclosure Design Rationale
 ### 1. Ergonomics
 Encoder positioned for natural right-handed use
 Button offers clear tactile response
@@ -180,6 +185,7 @@ LED colors reflect system state (success, failure, difficulty, etc.)
 Reinforced encoder mount
 Protective bezel for OLED
 Venting ports prevent overheating
+
 
 ## Summary
 Space Navigator is a fully modular, scalable, and visually engaging reaction game system.
