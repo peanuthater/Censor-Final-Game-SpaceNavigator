@@ -146,8 +146,8 @@ class Hardware:
         x, y, z = self.accel.acceleration
         
         if y < -3.0:
-            return "TILT_LEFT"
+            return "UP"
         if y > 3.0:
-            return "TILT_RIGHT"
+            return "DOWN"
 
         return None
