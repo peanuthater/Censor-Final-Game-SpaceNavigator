@@ -119,7 +119,6 @@ The UI module never makes game decisions—it simply displays the data provided 
 ### 4. High Score Manager — high_score_manager.py
 Features:<br>
 Maintains a three-entry leaderboard<br>
-Loads default scores<br>
 Inserts new scores in descending order<br>
 Handles initials updates<br>
 Serializes leaderboard to an NVM-like string<br>
