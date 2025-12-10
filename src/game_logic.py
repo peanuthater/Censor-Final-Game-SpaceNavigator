@@ -11,7 +11,7 @@ class GameLogic:
         self.hsm = high_score_manager 
         self.current_difficulty = "EASY"
         self.current_score = 0     
-        self.ACTIONS = ["TURN_LEFT", "TURN_RIGHT", "PRESS", "TILT_LEFT", "TILT_RIGHT"]
+        self.ACTIONS = ["TURN_LEFT", "TURN_RIGHT", "PRESS", "UP", "DOWN"]
        
         self.ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
         self.CHAR_COUNT = 3 
