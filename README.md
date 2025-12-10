@@ -187,6 +187,53 @@ Protective bezel for OLED<br>
 Venting ports prevent overheating<br>
 
 
+## Design Concept
+The overall game concept of Space Navigator is centered around physical actions: rotating, pressing, and tilting. These movements naturally resemble the controls of a steering wheel or a cockpit navigation device.<br>
+Based on this, the enclosure was intentionally designed to evoke the feeling of “piloting” during gameplay.<br>
+### Steering-Wheel Inspired Form Factor
+Because the game includes action inputs such as:<br>
+Rotation (via rotary encoder)<br>
+Button press<br>
+Left tilt<br>
+Right tilt<br>
+the gameplay experience strongly parallels driving or steering mechanisms.<br>
+To reinforce this thematic connection, the enclosure was built as a circular steering-wheel–like structure, with:<br>
+A round LED ring representing an illuminated dashboard instrument<br>
+The core electronic system mounted in the center, like the hub of a steering wheel<br>
+Physical interaction resembling real navigation or vehicle control<br>
+This shape not only enhances the user’s immersion, but also improves ergonomics by aligning physical gestures with the visual style of the game.
+
+
+## Fabrication and Assembly Process
+To build the enclosure, I used a laser cutter, which allowed fast and precise fabrication of structural components.
+### 1. Laser-Cut Construction
+Laser cutting was chosen because:<br>
+It offers very fast fabrication<br>
+It produces highly accurate, repeatable parts<br>
+It allows flat-pack assembly without requiring machined features<br>
+All enclosure layers and internal supports were cut from sheet material using the laser cutter.<br>
+
+### 2. Screw-less Assembly
+A key design decision was to avoid screws entirely.<br>
+The whole structure is held together using:<br>
+Interlocking separator plates<br>
+Simple mortise-and-tenon–style joints (finger joints)<br>
+Press-fit components<br>
+This results in:<br>
+Easy disassembly and inspection<br>
+Faster prototyping<br>
+Cleaner appearance<br>
+Reduced hardware complexity<br>
+### 3. Internal Component Mounting
+The circular outer shell holds:<br>
+The NeoPixel LED ring<br>
+The microcontroller board<br>
+The accelerometer<br>
+The rotary encoder module<br>
+The OLED display (center mounted)<br>
+The layered interlocking design ensures that all components remain stable without requiring screws or adhesives.<br>
+
+
 ## Summary
 Space Navigator is a fully modular, scalable, and visually engaging reaction game system.<br>
 By separating hardware, logic, UI, and input driver modules, the project demonstrates strong engineering practices and is suitable for academic submission, personal projects, and embedded systems prototyping.<br>
